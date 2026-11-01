@@ -1,7 +1,6 @@
 import React, {useEffect,useMemo,useState} from 'react';
 import {createRoot} from 'react-dom/client';
-import {ArrowUpRight, ArrowRight, Github, Linkedin, Mail, Menu, X, Code2, Workflow, Check, ChevronDown, ExternalLink, GitBranch, ShieldCheck, CalendarDays, FileText, Layers3} from 'lucide-react';
-import {profile,projects,skills,milestones,type Focus,type Project} from './data';
+import {ArrowUpRight, ArrowRight, Github, Linkedin, Mail, Menu, X, Check, ExternalLink, GitBranch, ShieldCheck, CalendarDays, FileText, Layers3} from 'lucide-react';import {profile,projects,skills,milestones,type Focus,type Project} from './data';
 import './styles.css';
 function App(){
  const [focus,setFocus]=useState<'all'|Focus>('all'); const [selected,setSelected]=useState<Project|null>(null); const [nav,setNav]=useState(false); const [tech,setTech]=useState('n8n'); const [node, setNode] = useState(0);
